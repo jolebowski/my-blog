@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Introduction
 
 Javascript a été crée en 10 jours par Brendan Eich en 1995. 
