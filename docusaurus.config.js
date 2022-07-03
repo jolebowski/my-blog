@@ -68,7 +68,7 @@ const config = {
             label: "Javascript",
             position: "right",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          // { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/jolebowski/my-blog",
             label: "GitHub",
