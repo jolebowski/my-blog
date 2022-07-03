@@ -64,8 +64,13 @@ const config = {
         },
         items: [
           {
-            to: "/docs/javascript/introduction",
+            to: "/docs/category/javascript",
             label: "Javascript",
+            position: "right",
+          },
+          {
+            to: "/docs/category/react",
+            label: "React",
             position: "right",
           },
           // { to: "/blog", label: "Blog", position: "left" },
