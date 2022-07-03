@@ -64,12 +64,6 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "intro",
-            position: "right",
-            label: "Tutorial",
-          },
-          {
             to: "/docs/javascript/introduction",
             label: "Javascript",
             position: "right",
