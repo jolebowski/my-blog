@@ -22,4 +22,5 @@ promise.then((e) => e + "!!!")
 
 Comme son nom l'indique une promise c'est une promesse que eventuellement  cet objet aura une valeur. Ca sera soit une valeur résolue ou valeur rejetée.
 La promise sera dans un état où elle est en attente jusqu'a ce que le resolve ou le rejet soit appelé. 
+
 L'interêt d'utiliser reject c'est pour nous assurer d'afficher un message d'erreur au cas ou le serveur de l'api est en panne puis cela permet de séparer avec le resolve et l'erreur.
