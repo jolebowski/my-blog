@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "My blog | jolebowski",
   tagline: "blog for help me and others developers",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://jolebowski.netlify.app",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
