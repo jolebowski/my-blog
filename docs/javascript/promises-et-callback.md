@@ -2,7 +2,7 @@
 sidebar_position: 9
 ---
 
-# Promises && Callback
+# Promises et Callback
 
 Deux méthodes sont utilisées pour réaliser un code asynchrone. 
 
