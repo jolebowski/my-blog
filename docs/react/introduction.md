@@ -44,15 +44,12 @@ Un composant est un morceau de code autonome qui renvoie une représentation vis
 C'est la partie que nous pouvons voir et avec laquelle nous pouvoins interagir. 
 Cela nous permet donc de créer des site web et des interfaces utilisateurs de manière très efficace, les composants étant les représentations autonomes de html, css et js.
 
-```javascript 
-function App(){
-    return(
-        <div>
-            <h1>Hello world</h1>
-        </div>
-    )
-}
-```
+Les causes du “re-rendering” du composant
+Quand un composant est monté et qu’il est affiché dans le DOM, il va être mis à jour dans 3 cas de figure:
+
+ - si son state est modifié via `this.setState`
+ - si ses props sont modifiées
+ - si son composant parent est mis à jour
 
 ## Single-page Application
 
