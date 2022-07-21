@@ -4,7 +4,8 @@ sidebar_position: 1
 
 # Introduction
 
-React a été par Facebook en 2013 pour répondre aux besoins des développeurs qui travaillaient sur des grosses application 
+React a été par Facebook en 2013 pour répondre aux besoins des développeurs qui travaillaient sur des grosses applications. 
+
 React une bibliothèque JavaScript. 
 
 Concept de React : 
@@ -22,7 +23,7 @@ Contrairement aux autres langages de programmation qui utilisent le mvc par exem
 
 Pour mettre en place un projet react la documentation de React est très bien documenté voici le [lien](https://fr.reactjs.org/docs/create-a-new-react-app.html).
 
-## A savoir 
+# A savoir 
 
 `npm i -g create-react-app`
 
@@ -44,12 +45,14 @@ Un composant est un morceau de code autonome qui renvoie une représentation vis
 C'est la partie que nous pouvons voir et avec laquelle nous pouvoins interagir. 
 Cela nous permet donc de créer des site web et des interfaces utilisateurs de manière très efficace, les composants étant les représentations autonomes de html, css et js.
 
-Les causes du “re-rendering” du composant
-Quand un composant est monté et qu’il est affiché dans le DOM, il va être mis à jour dans 3 cas de figure:
+Les causes du “re-rendering” du composant c'est quand un composant est monté et qu’il est affiché dans le DOM, il va être mis à jour dans 3 cas de figure:
 
  - si son state est modifié via `this.setState`
  - si ses props sont modifiées
  - si son composant parent est mis à jour
+
+Les hooks sont la nouvelle fonctionnalité introduite dans la version 16.8 de React. Elle permet d'utiliser l'état et d'autres fonctionnalités de React sans écrire de classe. Ils ne fonctionnent pas à l'intérieur des classes.
+
 
 ## Single-page Application
 
