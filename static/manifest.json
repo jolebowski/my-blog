@@ -1,6 +1,6 @@
 {
     "name": "joDocumentation",
-    "short_name": "joDocumentation",
+    "short_name": "joDoc",
     "description": "All you need to know about react, javascript and others.",
     "start_url": "/docs/category/javascript",
     "background_color": "#a07ab8",
