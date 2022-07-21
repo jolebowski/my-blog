@@ -9,7 +9,7 @@ Chaque composant de React a un cycle de vie que vous pouvez surveiller et manipu
 
 Ces trois phases sont : `Mounting`, `Updating` et `Unmounting`
 
-![React component lifecycle](./../../build/assets/images/react-component-lifecycle.png)
+![React component lifecycle](../../static/img/react-component-lifecycle.png)
 
 ## Mounting
 
