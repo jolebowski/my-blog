@@ -1,3 +1,9 @@
+---
+sidebar_position: 6
+---
+
+# useEffect
+
 Un `effet secondaire` appelé plus couramment en anglais le `side effect` est tout ce qui affecte quelque chose en dehors de la portée de la fonction en cours d'exécution.
 
 Plus précisément les effets secondaires ne sont pas prévisibles, car ce sont des actions qui sont effectuées avec le "monde extérieur".
