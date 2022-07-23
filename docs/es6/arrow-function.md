@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Arrow Functions
+# Arrow Function
 
 Les fonctions fléchées nous permettent d'écrire une syntaxe de fonction plus courte :
 
