@@ -25,3 +25,6 @@ document.getElementById('myDiv').innerValue = 'jolebowski'
  Ainsi, chaque fois qu'il y a un changement dans l'état de notre application, le DOM virtuel est mis à jour en premier au lieu du vrai DOM.
 
  ![Virtual DOM and Real Dom](../../static/img/virtual-Dom-real-Dom.png)
+
+## Actions 
+

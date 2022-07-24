@@ -12,6 +12,5 @@ Le paramètre par défaut entre en jeu lorsque l'argument n'est pas spécifié (
 ```js
 const greeting = (name = "Jordan") => "Hello " + name;
 console.log(greeting()); // Hello Jordan
-
 ```
 
