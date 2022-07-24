@@ -102,7 +102,7 @@ const App = () => {
     );
 };
 ```
-Dans notre exemple ci-dessus nous avons ajouté un deuxième composant de barre de recherche pour voir un comportement qui n'est pas approprié? En effet lorsque nous entrons des caréétères dans le champs la liste des monstres ainsi que le champs de recherche sont sollicités alors que ca ne devrait pas. Cela coute du temps à notre JavaScript et au fil du temps cela pourrait entraîner de nombreuses inefficacités. 
+Dans notre exemple ci-dessus nous avons ajouté un deuxième composant de barre de recherche pour voir un comportement qui n'est pas approprié? En effet lorsque nous entrons des caractères dans le champs la liste des monstres ainsi que le champs de recherche sont sollicités alors que ca ne devrait pas. Cela coute du temps à notre JavaScript et au fil du temps cela pourrait entraîner de nombreuses inefficacités. 
 
 
 ```javascript

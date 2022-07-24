@@ -27,7 +27,6 @@ Les actions ont un champ de type qui indique le type d'action à effectuer et to
 ```js
 const addTask = (task) => {
     return {
-        
         type: 'ADD_TODO',
         task: task
     }

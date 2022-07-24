@@ -21,7 +21,7 @@ Qu'importe la taille du composant qu'il soit gros ou petit ils peuvent être uti
 Les données ne circulent que dans une sens afin qu'il soit plus facile de débugger le code. 
 Contrairement aux autres langages de programmation qui utilisent le mvc par exemple React va seulement créer une interface utilisateur en utilisant seulemnt la vue. 
 
-Pour mettre en place un projet react la documentation de React est très bien documenté voici le [lien](https://fr.reactjs.org/docs/create-a-new-react-app.html).
+Pour mettre en place un projet React la documentation de React est très bien documenté voici le [lien](https://fr.reactjs.org/docs/create-a-new-react-app.html).
 
 # A savoir 
 
@@ -42,7 +42,7 @@ Le webpack va optimiser tous les fichiers afin d'avoir un rendu correct lorsque 
 En ce qui concerne Babel, il permet de convertir du JavaScript en du ... JavaScript. Pour être plus précis, il permet de convertir du code JavaScript récent (syntaxe ES2015+) en du code JavaScript capable d'être interprété par des vieux navigateurs. 
 
 Un composant est un morceau de code autonome qui renvoie une représentation visuelle de l'interface utilisateur. 
-C'est la partie que nous pouvons voir et avec laquelle nous pouvoins interagir. 
+C'est la partie que nous pouvons voir et avec laquelle nous pouvons interagir. 
 Cela nous permet donc de créer des site web et des interfaces utilisateurs de manière très efficace, les composants étant les représentations autonomes de html, css et js.
 
 Les causes du “re-rendering” du composant c'est quand un composant est monté et qu’il est affiché dans le DOM, il va être mis à jour dans 3 cas de figure:
@@ -56,4 +56,4 @@ Les hooks sont la nouvelle fonctionnalité introduite dans la version 16.8 de Re
 
 ## Single-page Application
 
-Une single-page application (SPA) est une application qui charge une unique page HTML et toutes les ressources nécessaires (telles que du JavaScript et des CSS) requises pour le fonctionnement de l’application. Aucune interaction sur la page ou les pages ultérieures ne nécessitera un nouvel aller-retour avec le serveur, ce qui signifie que la page n’a pas besoin d’être rafraîchie.
+Une single-page application (SPA) est une application qui charge une unique page HTML et toutes les ressources nécessaires (telles que du JavaScript et du CSS) requises pour le fonctionnement de l’application. Aucune interaction sur la page ou les pages ultérieures ne nécessitera un nouvel aller-retour avec le serveur, ce qui signifie que la page n’a pas besoin d’être rafraîchie.

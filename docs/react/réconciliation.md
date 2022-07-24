@@ -11,7 +11,7 @@ Les concepts importants qui sous-tendent le fonctionnement du processus de réco
 - [DOM virtuel](/docs/react/realDom-and-virtualDom#virtual-dom)
 - Algorithme Différent
 
- Les actions suivantes ont lieu dans React : 
+Les actions suivantes ont lieu dans React : 
 
 - React stocke une copie du Browser DOM qui s'appelle Virtual DOM.
 - Lorsque nous apportons des modifications ou ajoutons des données , React crée un nouveau DOM virtuel et le compare avec le précédent .
