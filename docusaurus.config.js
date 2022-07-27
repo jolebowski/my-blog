@@ -73,6 +73,21 @@ const config = {
             label: "React",
             position: "right",
           },
+          {
+            to: "/docs/redux",
+            label: "Redux",
+            position: "right",
+          },
+          {
+            to: "/docs/category/es6",
+            label: "Es6",
+            position: "right",
+          },
+          {
+            to: "/docs/category/glossaire",
+            label: "Glossaire",
+            position: "right",
+          },
           // { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/jolebowski/my-blog",
