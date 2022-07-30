@@ -80,35 +80,26 @@ for (let i = 0; i < array.length; i++) {
 }
 ```
 
-<!-- ## break et continue
+## break et continue
 
-Break dans un for permet de mettre fin à une boucle.
-Continue va continuer à boucler.
+`continue` va continuer à boucler.
 
 ```js
 for (let i = 0; i < 10; i++) {
   if (i === 5) {
-    console.log(i, "inside");
-    //break;
-    //continue;
-    // 0;
-    // 1;
-    // 2;
-    // 3;
-    // 4;
-    // 5;
+    continue;
   }
-  console.log(i);
-  //   0;
-  //   1;
-  //   2;
-  //   3;
-  //   4;
-  //   5;
-  //   5; // sans continue ce 5 s’affiche car à cause de la condition qui lui dit qu’il y a i == 5
-  //   6;
-  //   7;
-  //   8;
-  //   9;
-} -->
-<!-- ``` -->
+  console.log(i); // 0 1 2 3 4 6 7 8 9
+}
+```
+
+`break` dans un for permet de mettre fin à une boucle.
+
+```js
+for (let i = 0; i < 10; i++) {
+  console.log(i); // 0 1 2 3 4 5
+  if (i === 5) {
+    break;
+  }
+}
+```
