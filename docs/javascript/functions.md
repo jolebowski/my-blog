@@ -8,9 +8,11 @@ En javascript on utilise notre code en partie réutilisable appelé fonction.
 
 Les valeurs réelles entrées dans une fonction lorsqu'elle est appelé sont appelés arguments.
 
+Les valeurs qui sont définies lors de la création de la fonction sont appelée paramètres
+
 L'instruction return permet de renvoyer une valeur d'une fonction et qui stoppera l'exécution de la fonction.
 
-Les variables déclarés dans une fonction, ainsi que les paramtères de la fonction ont une portée locale. Cela signifie qu'ils sont visibles que dans la fonction.
+Les variables déclarés dans une fonction, ainsi que les paramètres de la fonction ont une portée locale. Cela signifie qu'ils sont visibles que dans la fonction.
 
 Il est possible d'avoir des variables local et global avec le même nom. Lorsque cela se produit, la variable locale à priorité sur la variable globale c'est ce qu'on appelle `le dépassement de porté`.
 

@@ -112,3 +112,5 @@ array.includes(9); // false
 ```
 
 ## Splice
+
+## Flat
