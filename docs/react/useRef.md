@@ -4,7 +4,7 @@ sidebar_position: 10
 
 # useRef
 
-`useRef` permet de conserver des valeurs entre les rendus. 
+`useRef` permet de conserver des valeurs entre les rendus.
 
 Il peut être utilisé pour stocker une valeur modifiable qui ne provoque pas de `re-render` lors de la mise à jour.
 
@@ -33,14 +33,13 @@ export default function App() {
     </>
   );
 }
-
 ```
+
 useRef() ne renvoie qu'un seul élément. Il renvoie un objet appelé current.
 
-L'objet peut conserver une valeur pendant toute la durée de vie du composant. 
+L'objet peut conserver une valeur pendant toute la durée de vie du composant.
 
-
-Dans React, on peut ajouter un refattribut à un élément pour y accéder directement dans le DOM.
+Dans React, on peut ajouter un `ref` attribut à un élément pour y accéder directement dans le DOM.
 
 ```javascript
 import { useRef } from "react";
@@ -63,5 +62,4 @@ export default function App() {
     </div>
   );
 }
-
 ```
