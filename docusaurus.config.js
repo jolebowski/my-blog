@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My blog | jolebowski",
+  title: "Roadmap front end",
   tagline: "blog for help me and others developers",
   url: "https://jolebowski.netlify.app",
   baseUrl: "/",
@@ -57,7 +57,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "jolebowski",
+        title: "Roadmap front end by @jolebowski",
         logo: {
           alt: "My blog Logo",
           src: "img/logo.svg",
@@ -81,6 +81,11 @@ const config = {
           {
             to: "/docs/category/es6",
             label: "Es6",
+            position: "right",
+          },
+          {
+            to: "/docs/css/introuction",
+            label: "CSS",
             position: "right",
           },
           {
