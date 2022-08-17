@@ -8,6 +8,27 @@ Les CSS (Cascading Style Sheets en anglais, ou « feuilles de style en cascade �
 
 CSS n'est pas vraiment un langage de programmation. C'est un langage de feuille de style, c'est-à-dire qu'il permet d'appliquer des styles sur différents éléments sélectionnés dans un document HTML.
 
+## Stylesheet(feuille de style)
+
+Une feuille de style est un fichier contenant le code qui décrit comment les éléments de votre page Web doivent être affichés.
+
+Pour que votre page Web puisse utiliser la feuille de style, vous devez créer un lien vers celle-ci. Pour ce faire, vous devrez créer un `<link>`dans votre code HTML.
+
+```html
+<link href="path-to-stylesheet/stylesheet.css" rel="stylesheet" />
+```
+
+L'attribut `href` spécifie le chemin d'accès à la ressource liée et l'attribut `rel` nomme la relation entre la ressource et votre document. Dans ce cas, la relation est une feuille de style.
+
+```html
+<html>
+  <head>
+    <title>Hello World !</title>
+    <link href="path-to-stylesheet/stylesheet.css" rel="stylesheet" />
+  </head>
+</html>
+```
+
 ## Selecteurs
 
 ```css
