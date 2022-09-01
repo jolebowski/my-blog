@@ -1,0 +1,40 @@
+---
+sidebar_position: 3
+---
+
+# Sass (Syntactically Awesome Style Sheets)
+
+Rend le css beaucoup plus facile à lire et à écrire.
+
+```css
+/* css */
+.categories-container {
+  background-color: red;
+  padding: 10px;
+}
+.categories-container .category-container {
+  background-color: green;
+  padding: 20px;
+}
+.categories-container .category-container .category-body-container {
+  background-color: blue;
+  padding: 30px;
+}
+```
+
+```scss
+/* scss */
+.categories-container {
+  background-color: red;
+  padding: 10px;
+  .category-container {
+    background-color: green;
+    padding: 20px;
+
+    .category-body-container {
+      background-color: blue;
+      padding: 30px;
+    }
+  }
+}
+```
