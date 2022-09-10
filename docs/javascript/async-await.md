@@ -1,3 +1,5 @@
+# Async Await
+
 C'est un moyen d'écrire des fonctions qui contiennent du code orienté promesse asynchrone qui semble synchrone
 
 Ppour créer une fonction asynchrome nous utilisons `async` fonction :
