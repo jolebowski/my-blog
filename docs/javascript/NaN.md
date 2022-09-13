@@ -9,8 +9,9 @@ La propriété globale NaN est une valeur utilisé pour représenter une quantit
 console.log('hello'/5) // NaN
 ```
 
+En javascript le nombre est converti en chaine de caractère '1' puis est concaténé avec la constance string. 
+
 ```javascript
 const string = 'jolebowski'
 console.log(string + 1) // jolebowski1
 ```
-En javascript le nombre est converti en chaine de caractère '1' puis est concaténé avec la constance string. 
