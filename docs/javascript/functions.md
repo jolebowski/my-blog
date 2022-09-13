@@ -22,18 +22,18 @@ let userName = "jordan";
 function showUserName1() {
   console.log(userName);
 }
-console.log(showUserName1()); // jordan
+showUserName1(); // jordan
 
 function showUserName() {
   userName = "jordy";
   console.log(userName);
 }
-console.log(showUserName()); // jordy
+showUserName(); // jordy
 
 function showUserName2() {
   console.log(userName);
 }
-console.log(showUserName2()); // jordy
+showUserName2(); // jordy
 ```
 
 La valeur de retour d'une fonction peut être stockée dans une variable ou réutilisée dans le programme en tant qu'argument de fonction, on appelle ça une fonction expression.
