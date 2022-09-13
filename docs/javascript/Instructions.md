@@ -6,28 +6,25 @@ sidebar_position: 8
 
 ## If
 
-If est utilisé pour prendre des décisions dans le code. le mot-clé if indique à Javascript d'exécuter le code entre les accolades sous certaines conditions définies entre parenthèses.
-Lorsque la condition est à true le programme entre les accolades s'exécute par contre lorsque la condition est à false le programme entre accolades ne s'exécute pas.
+If est utilisé pour prendre des décisions dans le code.
 
 ```js
-if (true) {
-  console.log("the instruction is executed");
+let sale = true;
+if (sale) {
+  console.log("Time to buy!");
 }
-
-function test(bool) {
-  if (bool) {
-    return "It's true";
-  } else {
-    return "It's false";
-  }
-}
-console.log(test(true)); // It's true
-console.log(test(false)); // It's false
 ```
+
+Remarquez que dans l'exemple ci-dessus, nous avons une déclaration `if` . L' if énoncé est composé de :
+
+- Le if mot clé suivi d'un ensemble de parenthèses () suivi d'un bloc de code , ou d'une instruction de bloc , indiqué par un ensemble d'accolades {}.
+- À l'intérieur des parenthèses (), une condition est fournie qui évalue à true ou false.
+- Si la condition est évaluée à true, le code à l'intérieur des accolades {} s'exécute.
+- Si la condition est évaluée à false, le bloc ne s'exécutera pas.
 
 ## Else
 
-Avec une else instruction un autre bloc de code peut être exécuté.
+Avec une instruction else un autre bloc de code peut être exécuté.
 
 ```js
 if (true) {
@@ -37,4 +34,10 @@ if (true) {
 }
 ```
 
-L’ordre est important dans les instructions if, else
+Dans l'exemple ci-dessus, la déclaration else:
+
+- Utilise le mot-clé else suivant le bloc de code d'un if instruction.
+- Possède un bloc de code entouré d'un ensemble d'accolades {}.
+- Le code à l'intérieur du bloc else de l'instruction s'exécute lorsque la condition if de l'instruction est évaluée à false.
+
+L’ordre est important dans les instructions if, else.

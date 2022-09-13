@@ -1,3 +1,11 @@
+Les opérateurs de comparaison comparent la valeur de gauche avec la valeur de droite.
+
+```js
+10 < 12;
+```
+
+Il peut être utile de considérer les énoncés de comparaison comme des questions. Lorsque la réponse est "oui", l'énoncé est évalué à `true`, et lorsque la réponse est "non", l'énoncé est évalué à `false`. Le code ci-dessus demanderait : est-ce que 10 est inférieur à 12 ? Oui ! Donc `10 < 12` s'évalue à `true`.
+
 ## Opérateur d’égalité, d’égalité stricte, d’inégalité, d’inégalité stricte
 
 Type Coercion est le fait de convertir un type à un autre.
@@ -121,3 +129,19 @@ Par exemple, si vous regardez `A && B`, si `A` est false , alors quelle que 
 ![short-circuiting](../../static/img/short-circuiting.png)
 
 Les expression de logiques sont évalués de gauche à droite. Semblables aux expressions mathématiques, les expressions logiques peuvent également utiliser des parenthèses pour indiquer les parties de l’expression qui doivent être évalués en premier.
+
+## Opérateur ténaire
+
+```js
+let isNightTime = true;
+isNightTime
+  ? console.log("Turn on the lights!")
+  : console.log("Turn off the lights!");
+```
+
+Dans l'exemple ci-dessus :
+
+- La condition, `isNightTime`, est fournie avant le`?`.
+- Deux expressions suivent le `?` et sont séparées par deux points `:`.
+- Si la condition est évaluée à `true`, la première expression s'exécute.
+- Si la condition est évaluée à `false`, la deuxième expression s'exécute
