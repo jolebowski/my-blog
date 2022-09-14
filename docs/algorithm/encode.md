@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Encode
 
-La fonciton envode renvoie un message encodé.
+La fonciton encode renvoie un message encodé.
 
 Elle reçoit un paramètre plainText, qui est une chaîne de caractères par exemple aaaabeccaaa.
 

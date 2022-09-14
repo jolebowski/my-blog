@@ -12,7 +12,7 @@ if (myVariable) {
 }
 ```
 
-Le bloc de code dans l'`if` instruction s'exécutera car myVariablea une valeur truthy; même si la valeur de `myVariable` n'est pas explicitement la valeur `true`, lorsqu'elle est utilisée dans un contexte booléen ou conditionnel, elle est évaluée à `true` car une valeur `non-falsy` lui a été attribuée.
+Le bloc de code dans l'`if` instruction s'exécutera car myVariable a une valeur truthy; même si la valeur de `myVariable` n'est pas explicitement la valeur `true`, lorsqu'elle est utilisée dans un contexte booléen ou conditionnel, elle est évaluée à `true` car une valeur `non-falsy` lui a été attribuée.
 
 Quelles valeurs sont fausses - ou évaluées false lorsqu'elles sont vérifiées comme condition ? La liste des valeurs fausses comprend:
 
