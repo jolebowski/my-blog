@@ -65,7 +65,12 @@ const config = {
         items: [
           {
             to: "/docs/category/javascript",
-            label: "Javascript",
+            label: "JavaScript",
+            position: "right",
+          },
+          {
+            to: "/docs/category/typescript",
+            label: "TypeScript",
             position: "right",
           },
           {
