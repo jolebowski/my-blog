@@ -18,7 +18,8 @@ const resultArray = [];
 for (let i = 0; i < input.length; i++) {
   if (input[i] === "e") {
     resultArray.push(input[i]);
-  } else if (input[i] === "u") {
+  }
+  if (input[i] === "u") {
     resultArray.push(input[i]);
   }
   for (let y = 0; y < vowels.length; y++) {
