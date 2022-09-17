@@ -96,10 +96,30 @@ for (let i = 0; i < 10; i++) {
 `break` dans un for permet de mettre fin à une boucle.
 
 ```js
-for (let i = 0; i < 10; i++) {
-  console.log(i); // 0 1 2 3 4 5
-  if (i === 5) {
+for (let i = 0; i < 99; i++) {
+  if (i > 2) {
     break;
   }
+  console.log("Banana.");
+}
+
+console.log("Orange you glad I broke out the loop!");
+
+// Banana.
+// Banana.
+// Banana.
+// Orange you glad I broke out the loop!
+```
+
+Pour exécuter une boucle for en sens inverse, nous devons :
+
+- Définir la variable iterator à la valeur la plus élevée souhaitée dans l'expression d'initialisation.
+- Définir la condition d'arrêt lorsque la variable iterator est inférieure à la valeur souhaitée.
+- L'itérateur doit diminuer par intervalles après chaque itération.
+
+```js
+for (let counter = 3; counter >= 0; counter--) {
+  console.log(counter);
+  // 3 2 1 0
 }
 ```

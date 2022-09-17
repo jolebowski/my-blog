@@ -8,6 +8,22 @@ Un tableau est une structure de données que nous pouvons utiliser pour stocker 
 
 Imbriquer des tableau dans d'autres tableau c'est `un tableau multidimensionnel.`
 
+Vous pouvez déclarer des variables avec les mots-clés let et const. Les variables déclarées avec let peuvent être réaffectées.
+
+Les variables déclarées avec le mot-clé `const` ne peuvent pas être réaffectées. Cependant, les éléments d'un tableau déclaré avec `const` restent mutables. Cela signifie que nous pouvons modifier le contenu d'un tableau `const`, mais que nous ne pouvons pas réaffecter un nouveau tableau ou une valeur différente.
+
+```js
+let condiments = ["Ketchup", "Mustard", "Soy Sauce", "Sriracha"];
+
+const utensils = ["Fork", "Knife", "Chopsticks", "Spork"];
+
+console.log(condiments); // [ 'Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha' ]
+condiments = ["Mayo"];
+console.log(condiments); // [ 'Mayo' ]
+utensils[3] = "Spoon";
+console.log(utensils); // [ 'Fork', 'Knife', 'Chopsticks', 'Spoon' ]
+```
+
 ## Push
 
 La méthode [push](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/push) permet d'ajouter des données à la fin d'un tableau.
@@ -111,6 +127,44 @@ array.includes(9); // false
 "jolebowski".includes("a"); // false
 ```
 
-## Splice
+## Slice
+
+La méthode [slice()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/slice).
 
 ## Flat
+
+## Splice
+
+La méthode [splice()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) modifie le contenu d'un tableau en retirant des éléments et/ou en ajoutant de nouveaux éléments à même le tableau.On peut ainsi vider ou remplacer une partie d'un tableau.
+
+```js
+let secretMessage = [
+  "Learning",
+  "is",
+  "not",
+  "about",
+  "what",
+  "you",
+  "get",
+  "easily",
+  "the",
+  "first",
+  "time,",
+  "it",
+  "is",
+  "about",
+  "what",
+  "you",
+  "can",
+  "figure",
+  "out.",
+  "-2015,",
+  "Chris",
+  "Pine,",
+  "Learn",
+  "JavaScript",
+];
+console.log(secretMessage); // Learning is not about what you get easily the first time, it is about what you can figure out. -2015, Chris Pine, Learn JavaScript
+
+secretMessage.splice(6, 5, "know,"); //Learning is not about what you know, it is about what you can figure out. -2015, Chris Pine, Learn JavaScript
+```

@@ -52,12 +52,19 @@ Un générique c'est essentiellement un paramètre de type qui peut être utilis
 
 T est généralement le type départ, ce sont les noms des paramètres les plus utilisés.
 
-UN type unknow est un type qui nous permet de dire quel type nous n'avons pas obtenu
+Nous rajoutons un argument T à la ifn de Promise car nous savons pas ce qu'on va retourner à ce stade là.
+
+Le T présent juste avant d'écrire l'argument est l'élément qui va déterminé quel type de données qu'on reçoit.
 
 ```ts
 const getData = async <T>(url :string):Promise<T> => {
-    const res = await fetch(url)
+  const res = await fetch(url)
     return awai res.json()
 }
-
 ```
+
+Un type `unknow` est un type qui nous permet de dire quel type nous n'avons pas obtenu.
+
+Le type `never` est très spécial dans TypeScript. C'est un type très spécial. C'est l'opposé du type any, cela signifie que rien ne peut jamais être assigné à `never`. La raison pour laquelle une variable est never c'est pour assurer que vous prenniez l'iniatif de faire en sorte que la variable soit jamais never.
+
+Le fait de definir des types à chaque composant, cela constitue la base TypeScript.
