@@ -9,8 +9,6 @@ Les ciseaux coupent le papier.
 Le papier recouvre la pierre.
 En cas d'égalité, le jeu se termine par un match nul.
 
-Traduit avec www.DeepL.com/Translator (version gratuite)
-
 ```js
 //Get the user’s choice.
 
