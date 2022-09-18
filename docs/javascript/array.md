@@ -168,3 +168,11 @@ console.log(secretMessage); // Learning is not about what you get easily the fir
 
 secretMessage.splice(6, 5, "know,"); //Learning is not about what you know, it is about what you can figure out. -2015, Chris Pine, Learn JavaScript
 ```
+
+La méthode [sort()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) trie les éléments d'un tableau, dans ce même tableau, et renvoie le tableau.
+
+```js
+const months = ["March", "Jan", "Feb", "Dec"];
+months.sort();
+console.log(months); // Array ["Dec", "Feb", "Jan", "March"]
+```
