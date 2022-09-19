@@ -82,10 +82,12 @@ Comme l'opérateur d'égalité, l'opérateur inférieur convertit les types de d
 `&&` renvoie true si et seulement si les opérations à gauche et à droite sont vrais et renvoie false lorsqu’ils ne le sont pas
 
 ```js
-if (10 <= 20 && 20 >= 10) {
-  return "true";
+function isTrue() {
+  if (10 <= 20 && 20 >= 10) {
+    return true;
+  }
 }
-
+console.log(isTrue); // true
 //10 <= 20 est évaluée en premier, ce qui renvoie true donc il passe à l’évaluation de l’expression à droite (20 >= 10). Cette expression est également évaluée a true */
 ```
 
