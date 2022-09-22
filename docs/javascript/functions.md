@@ -71,3 +71,17 @@ const sum = (a, b) => {
 sum(1, 2);
 sum(1)(4);
 ```
+
+# setTimeout, setInterval, ClearInterval
+
+```js
+let i = 1;
+const interval = setInterval(() => {
+  console.log("here is message number " + i);
+  i++;
+}, 1000);
+
+setTimeout(() => {
+  clearInterval(interval);
+}, 6000);
+```

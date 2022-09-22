@@ -65,6 +65,8 @@ La méthode [unshift()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Ref
 const array = [1, 2, 3, 4];
 array.unshift(0);
 console.log(array); // [0,1,2,3,4]
+array.unshift(100, "hello");
+console.log(array); // [100, "hello",0,1,2,3,4]
 ```
 
 ## Map
