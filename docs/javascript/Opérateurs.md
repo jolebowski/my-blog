@@ -147,3 +147,14 @@ Dans l'exemple ci-dessus :
 - Deux expressions suivent le `?` et sont séparées par deux points `:`.
 - Si la condition est évaluée à `true`, la première expression s'exécute.
 - Si la condition est évaluée à `false`, la deuxième expression s'exécute
+
+## Nullish Coalescing Operator
+
+L'opérateur `??` renvoie le premier argument s'il est `nul` ou `undefined`. Sinon, il renvoie le second.
+
+```js
+let name = null;
+let text = "missing";
+let result = name ?? text;
+console.log(`The name is ${result}`); // the name is missing
+```
