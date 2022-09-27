@@ -18,7 +18,7 @@ Quelles valeurs sont fausses - ou évaluées false lorsqu'elles sont vérifiées
 
 - 0
 - Chaînes vides comme "" ou ''
-- nullqui représentent quand il n'y a pas de valeur du tout
+- null qui représente quand il n'y a pas de valeur du tout
 - undefined qui représentent quand une variable déclarée n'a pas de valeur
 - NaN, ou pas un nombre
 
