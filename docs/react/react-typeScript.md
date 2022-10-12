@@ -1,17 +1,19 @@
+# React in TypeScript
+
 Dans un projet creat react app on peut ajouter du typescript.
 
 Une fois que c'est fait il faut ajouter un fichier tsconfig.json qui définir toutes les règles qu concernent les fichiers typeScript.
 
-void c'est comme undefined en javascript
+`void` c'est comme undefined en JavaScript.
 
-La règle d'or clé a retenir sur les types par rapport aux interfaces est que les interfaces sont extansibles très similaire aux composants de classe
+La règle d'or clé a retenir sur les types par rapport aux interfaces est que les interfaces sont extansibles très similaire aux composants de classe.
 
-Souvent on commence par un I pour déclarer une interface c'est une norme
+Souvent on commence par un I pour déclarer une interface c'est une norme.
 
-interface est une sorte d'objet mais sans égale
+interface est une sorte d'objet mais sans égale.
 
 Si une clé dans une interface est une propriété optionnelle, vous pouvez mettre un point d'interrogation.
-Cela indiquera à TypeScript que ce ce que vous pouvez obtenir peut être une valeur ou une valeur nulle
+Cela indiquera à TypeScript que ce ce que vous pouvez obtenir peut être une valeur ou une valeur nulle.
 
 ```ts
 interface ISearchBoxProps {
@@ -68,3 +70,21 @@ Un type `unknow` est un type qui nous permet de dire quel type nous n'avons pas 
 Le type `never` est très spécial dans TypeScript. C'est un type très spécial. C'est l'opposé du type any, cela signifie que rien ne peut jamais être assigné à `never`. La raison pour laquelle une variable est never c'est pour assurer que vous prenniez l'iniatif de faire en sorte que la variable soit jamais never.
 
 Le fait de definir des types à chaque composant, cela constitue la base TypeScript.
+
+```ts
+useEffect(() => {
+  const getData = async <T>(url: string): Promise<T> => {
+    const response = await fetch(url);
+    return await response.json();
+  };
+
+  const fetchUser = async () => {
+    const data = await getData<Monster[]>(
+      "https://jsonplaceholder.typicode.com/users"
+    );
+    setMonters(data);
+  };
+
+  fetchUser();
+}, []);
+```

@@ -24,49 +24,28 @@ utensils[3] = "Spoon";
 console.log(utensils); // [ 'Fork', 'Knife', 'Chopsticks', 'Spoon' ]
 ```
 
-## Push
+## Find
 
-La méthode [push](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/push) permet d'ajouter des données à la fin d'un tableau.
-Push prend un ou plusieurs paramètres et les 'push' à la fin du tableau.
+La méthode find() renvoie une valeur undefined si aucun élément n'est trouvé.
+La méthode find() ne modifie pas le tableau original.
+La méthode find() renvoie la valeur du premier élément trouvé dans un tableau.
 
-```javascript
-const array = [1, 2, 3];
-array.push(4);
-console.log(array); // [1,2,3,4]
+```js
+const myArray = [1, 2, 3, 4, 5];
+const elementFounded = myArray.find((element) => element === 5);
+console.log(elementFounded); // 5
 ```
 
-## Pop
-
-La méthode [pop](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) est utilisé pour supprimer le dernier élément d'un tableau. ON peut stocker la valeur supprimé en l'affectant à une constante.
-
-```javascript
-const array = [1, 2, 3];
-const oneDown = array.pop();
-console.log(array); // [1,2]
-console.log(oneDown); // 3
+```js
+const peopleArray = [{ id: 1 }, { id: 2 }, { id: 3 }];
+const people = peopleArray.find((person) => person.id === 4); // {id:4}
+console.log(people); // {id:4}
 ```
 
-## Shift
-
-La méthode [shift()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) permet de supprimer le premier élément d'un tableau. On peut stocker la valeur supprimé en l'affectant à une constante.
-
-```javascript
-const array = [1, 2, 3];
-const firstElementDeleted = array.shift(); // 1
-console.log(array); // [2,3]
-console.log(firstElementDeleted); // 1
-```
-
-## Unshift
-
-La méthode [unshift()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) permet d'ajouter un élément au début du tableau.
-
-```javascript
-const array = [1, 2, 3, 4];
-array.unshift(0);
-console.log(array); // [0,1,2,3,4]
-array.unshift(100, "hello");
-console.log(array); // [100, "hello",0,1,2,3,4]
+```js
+const myArray = [1, 10, 5, 7, 9];
+const myArray2 = myArray.find((e) => e > 5);
+console.log(myArray2); // 10;
 ```
 
 ## Map
@@ -129,6 +108,51 @@ array.includes(9); // false
 "jolebowski".includes("a"); // false
 ```
 
+## Push
+
+La méthode [push](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/push) permet d'ajouter des données à la fin d'un tableau.
+Push prend un ou plusieurs paramètres et les 'push' à la fin du tableau.
+
+```javascript
+const array = [1, 2, 3];
+array.push(4);
+console.log(array); // [1,2,3,4]
+```
+
+## Pop
+
+La méthode [pop](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) est utilisé pour supprimer le dernier élément d'un tableau. ON peut stocker la valeur supprimé en l'affectant à une constante.
+
+```javascript
+const array = [1, 2, 3];
+const oneDown = array.pop();
+console.log(array); // [1,2]
+console.log(oneDown); // 3
+```
+
+## Shift
+
+La méthode [shift()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) permet de supprimer le premier élément d'un tableau. On peut stocker la valeur supprimé en l'affectant à une constante.
+
+```javascript
+const array = [1, 2, 3];
+const firstElementDeleted = array.shift(); // 1
+console.log(array); // [2,3]
+console.log(firstElementDeleted); // 1
+```
+
+## Unshift
+
+La méthode [unshift()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) permet d'ajouter un élément au début du tableau.
+
+```javascript
+const array = [1, 2, 3, 4];
+array.unshift(0);
+console.log(array); // [0,1,2,3,4]
+array.unshift(100, "hello");
+console.log(array); // [100, "hello",0,1,2,3,4]
+```
+
 ## Slice
 
 La méthode [slice()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/slice).
@@ -170,6 +194,8 @@ console.log(secretMessage); // Learning is not about what you get easily the fir
 
 secretMessage.splice(6, 5, "know,"); //Learning is not about what you know, it is about what you can figure out. -2015, Chris Pine, Learn JavaScript
 ```
+
+# Sort
 
 La méthode [sort()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) trie les éléments d'un tableau, dans ce même tableau, et renvoie le tableau.
 

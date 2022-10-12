@@ -144,21 +144,4 @@ const App = () => {
 
 Nous pouvons faire c'est que nous ne voulons filtrer les monstres que lorsque les éléments pertinents pour filtrer les montres ont changé , ce qui signifie que si le tableau des montres a changé ou si la valeur du champ de recherche a changé les deux vivent dans notre state. Donc nous ajoutons un deuxième useEffect qui cette fois ci comportera des éléments dans son tableau de dépendances.
 
-```js
-  useEffect(() => {
-    const getData = async(url: string)=> {
-      const response = await fetch(url);
-      return await response.json();
-    };
-
-    const fetchUser = async () => {
-      const data = await getData<Monster[]>(
-        "https://jsonplaceholder.typicode.com/users"
-      );
-      setMonters(data);
-    };
-
-    fetchUser();
-  }, []);
-
-```
+## UnMounting
