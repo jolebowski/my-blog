@@ -164,6 +164,18 @@ const total = array.reduce(
 console.log(total); // 21
 ```
 
+```js
+const brands = [
+  { id: 1, name: "nike", employees: 5000 },
+  { id: 2, name: "adidas", employees: 2000 },
+];
+const totalEmployees = brands.reduce(
+  (total, brand) => total + brand.employees,
+  0
+);
+console.log(totalEmployees); // 7000
+```
+
 ## .unshift()
 
 La méthode [unshift()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) permet d'ajouter un élément au début du tableau.
