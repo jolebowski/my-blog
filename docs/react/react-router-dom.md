@@ -78,3 +78,29 @@ const Navigation = () => {
 
 export default Navigation;
 ```
+
+## useNavigate
+
+useNavigate est un hook qui nous permet d'effectuer les actions de navigation.
+
+```js
+import { useNavigate } from "react-router-dom";
+const Navigation = () => {
+  const navigate = useNavigate();
+
+  const goToCheckoutHandler = () => {
+    navgiate("/checkout");
+  };
+
+  return (
+    <>
+      <div className="navigation">
+        <button onClick={() => goToCheckoutHandler}></button>
+      </div>
+      <Outlet />
+    </>
+  );
+};
+
+export default Navigation;
+```
