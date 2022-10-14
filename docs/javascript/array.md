@@ -24,7 +24,7 @@ utensils[3] = "Spoon";
 console.log(utensils); // [ 'Fork', 'Knife', 'Chopsticks', 'Spoon' ]
 ```
 
-## Find
+## .find()
 
 La méthode find() renvoie une valeur undefined si aucun élément n'est trouvé.
 La méthode find() ne modifie pas le tableau original.
@@ -48,7 +48,7 @@ const myArray2 = myArray.find((e) => e > 5);
 console.log(myArray2); // 10;
 ```
 
-## Map
+## .map()
 
 La méthode [map()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/map) crée un nouveau tableau avec les résultats de l'appel d'une fonction fournie sur chaque élément du tableau appelant.
 
@@ -72,7 +72,7 @@ const arr = [1, 2, 3, 4];
 console.log(arr.map((e) => "e")); // ['e', 'e', 'e', 'e']
 ```
 
-## Filter
+## .filter()
 
 La méthode [filter()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) est assez similaire à map en effet il renvoie un nouveau tableau en itinérant chaque élément du tableau.
 Filter retourne une valeur `true` or `flase`.
@@ -92,7 +92,7 @@ const arrayFiltred2 = [1, 2, 3, 4, 5].filter(() => false); // []
 console.log(arrayFiltred2); // []
 ```
 
-## Includes
+## .includes()
 
 La méthode [includes()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) est une méthode qui prend un seul argument.
 Includes() vérifie à l'intérieur du tableau si l'élément existe ou non.
@@ -108,7 +108,7 @@ array.includes(9); // false
 "jolebowski".includes("a"); // false
 ```
 
-## Push
+## .push()
 
 La méthode [push](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/push) permet d'ajouter des données à la fin d'un tableau.
 Push prend un ou plusieurs paramètres et les 'push' à la fin du tableau.
@@ -119,7 +119,7 @@ array.push(4);
 console.log(array); // [1,2,3,4]
 ```
 
-## Pop
+## .pop()
 
 La méthode [pop](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) est utilisé pour supprimer le dernier élément d'un tableau. ON peut stocker la valeur supprimé en l'affectant à une constante.
 
@@ -130,7 +130,7 @@ console.log(array); // [1,2]
 console.log(oneDown); // 3
 ```
 
-## Shift
+## .shift()
 
 La méthode [shift()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) permet de supprimer le premier élément d'un tableau. On peut stocker la valeur supprimé en l'affectant à une constante.
 
@@ -141,7 +141,30 @@ console.log(array); // [2,3]
 console.log(firstElementDeleted); // 1
 ```
 
-## Unshift
+## .reduce()
+
+Reduce est une excellente méthode de tableau à utiliser lorsque vous voulez faire deux choses.
+La première est ce que vous voulez vous retrouver avec une seule valeur à la fin.
+
+> :warning: **Pas un tableau mais une valeur.**
+
+La deuxième est lorsque vous voulez persister, le retour ou le résultat de l'itération sur vos éléments à chaque itération suivante.
+Reduce prend deux arguments :
+
+- Le premier argument est une fonction qui a deux paramètres,le premier paramètre est ce qu'on appelle l'accumulateur comme son nom l'indique c'est la valeur accumulée de l'appel de cette fonction sur chaque élément avant celui sur lequel vous êtes actuellement. Le deuxième paramètre est l'élément lui même, c'est donc l'élément actuel sur lequel vous itérez.
+
+- Le deuxième argument est la valeure initiale c'est la valeur qui débute en premier
+
+```js
+const array = [1, 2, 3, 4, 5, 6];
+const total = array.reduce(
+  (accumulator, currentElement) => accumulator + currentElement,
+  0
+);
+console.log(total); // 21
+```
+
+## .unshift()
 
 La méthode [unshift()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) permet d'ajouter un élément au début du tableau.
 
@@ -153,13 +176,13 @@ array.unshift(100, "hello");
 console.log(array); // [100, "hello",0,1,2,3,4]
 ```
 
-## Slice
+## .slice()
 
 La méthode [slice()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/slice).
 
-## Flat
+## flat
 
-## Splice
+## .splice()
 
 La méthode [splice()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) modifie le contenu d'un tableau en retirant des éléments et/ou en ajoutant de nouveaux éléments à même le tableau.On peut ainsi vider ou remplacer une partie d'un tableau.
 
@@ -195,7 +218,7 @@ console.log(secretMessage); // Learning is not about what you get easily the fir
 secretMessage.splice(6, 5, "know,"); //Learning is not about what you know, it is about what you can figure out. -2015, Chris Pine, Learn JavaScript
 ```
 
-# Sort
+# .sort()
 
 La méthode [sort()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) trie les éléments d'un tableau, dans ce même tableau, et renvoie le tableau.
 
