@@ -92,6 +92,14 @@ const arrayFiltred2 = [1, 2, 3, 4, 5].filter(() => false); // []
 console.log(arrayFiltred2); // []
 ```
 
+```js
+const arr1 = [1, 2, 3, 4, 5];
+
+const newArr = arr1.filter((e) => e !== 2);
+
+console.log(newArr); //[(1, 3, 4, 5)];
+```
+
 ## .includes()
 
 La méthode [includes()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) est une méthode qui prend un seul argument.
