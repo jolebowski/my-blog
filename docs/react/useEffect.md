@@ -144,4 +144,28 @@ const App = () => {
 
 Nous pouvons faire c'est que nous ne voulons filtrer les monstres que lorsque les éléments pertinents pour filtrer les montres ont changé , ce qui signifie que si le tableau des montres a changé ou si la valeur du champ de recherche a changé les deux vivent dans notre state. Donc nous ajoutons un deuxième useEffect qui cette fois ci comportera des éléments dans son tableau de dépendances.
 
+## Async et Await
+
+Lorsque vous utilisez une fonction asynchrone à l'intérieur dans useEffect vous ne pouvez pas faire cela :
+
+```js
+useEffect(async () => {}, []);
+```
+
+mais plutot comme cela:
+
+```js
+useEffect(() => {
+  const getCategories = async () => {
+    const categoryMap = await getCategoriesAndDocument();
+    console.log(categoryMap);
+  };
+  getCategories();
+}, []);
+
+useEffect(() => {}, []);
+```
+
+La fonction est appelé à l'interieur de notre callback de useEffect.
+
 ## UnMounting

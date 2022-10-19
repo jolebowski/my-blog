@@ -59,10 +59,10 @@ Nous rajoutons un argument T à la ifn de Promise car nous savons pas ce qu'on v
 Le T présent juste avant d'écrire l'argument est l'élément qui va déterminé quel type de données qu'on reçoit.
 
 ```ts
-const getData = async <T>(url :string):Promise<T> => {
-  const res = await fetch(url)
-    return awai res.json()
-}
+const getData = async <T>(url: string): Promise<T> => {
+  const res = await fetch(url);
+  return await res.json();
+};
 ```
 
 Un type `unknow` est un type qui nous permet de dire quel type nous n'avons pas obtenu.
