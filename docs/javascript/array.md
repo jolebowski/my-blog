@@ -100,6 +100,14 @@ const newArr = arr1.filter((e) => e !== 2);
 console.log(newArr); //[(1, 3, 4, 5)];
 ```
 
+Lorsque que vous ne souhaitez pas utiliser l'élément d'un tableau mais plutôt son index c'est à dire son emplacement dans le tableau vous pouvez ajouter un `_` dans votre callback.
+
+```js
+const arr = [1, 2, 3, 4, 5, 6, 7];
+const newArr = arr.filter((_, index) => index < 4);
+console.log(newArr); // [0,1,2,3,4]
+```
+
 ## .includes()
 
 La méthode [includes()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) est une méthode qui prend un seul argument.
