@@ -2,7 +2,7 @@
 
 Context c'est très similaire un composant qui entoure tous les autres composants qui ont besoin d'accéder au contexte.
 
-Contexte c'est comme un lieu de stockage sauf que c'est un composant qui stocke exclusiovement des choses
+Contexte c'est comme un lieu de stockage sauf que c'est un composant qui stocke exclusivement des choses.
 
 ```js
 import { useState } from "react";
@@ -51,6 +51,10 @@ export const Component2 = () => {
 };
 ```
 
+## Avantages et inconvenients
+
 Même si vous ne faites aucune modification dans le context lorsque vous le faites appel dans un composant quelquonque le composant va se `re-render`. Mais cela ne signifie pas qu'il restituera quoi que soit au DOM, car il ne le fera que si la valeur est réllement mise à jour.
 
 Si on a des centaines de composants, le fait d'utiliser le même contexte à plusieurs reprises peut etre un problème de perfommances.
+
+Avec le contexte vous êtes en mesure d'envelopper les parties appropriés de l'application et d'isoler l'accessibilité uniquement aux enfants de l'endroit ou est développé le provider contrairement à Redux qui enveloppera toujours l'application entière.
