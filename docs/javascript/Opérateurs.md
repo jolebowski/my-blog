@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 Les opérateurs de comparaison comparent la valeur de gauche avec la valeur de droite.
 
 ```js
