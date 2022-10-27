@@ -19,7 +19,6 @@ const isNumber = (number) => {
   if (isNaN(number)) {
     return `${number} is not a number`;
   }
-
   return number * 10;
 };
 console.log(isNumber("20A")); // 20A is not a number
