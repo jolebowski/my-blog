@@ -63,42 +63,41 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
-          // {
-          //   to: "/docs/category/javascript",
-          //   label: "JavaScript",
-          //   position: "right",
-          // },
-          // {
-          //   to: "/docs/category/typescript",
-          //   label: "TypeScript",
-          //   position: "right",
-          // },
-          // {
-          //   to: "/docs/category/react",
-          //   label: "React",
-          //   position: "right",
-          // },
-          // {
-          //   to: "/docs/redux",
-          //   label: "Redux",
-          //   position: "right",
-          // },
-          // {
-          //   to: "/docs/category/es6",
-          //   label: "Es6",
-          //   position: "right",
-          // },
-          // {
-          //   to: "/docs/css/introuction",
-          //   label: "CSS",
-          //   position: "right",
-          // },
-          // {
-          //   to: "/docs/category/glossaire",
-          //   label: "Glossaire",
-          //   position: "right",
-          // },
-          // { to: "/blog", label: "Blog", position: "left" },
+          {
+            to: "/docs/category/javascript",
+            label: "JavaScript",
+            position: "right",
+          },
+          {
+            to: "/docs/category/typescript",
+            label: "TypeScript",
+            position: "right",
+          },
+          {
+            to: "/docs/category/react",
+            label: "React",
+            position: "right",
+          },
+          {
+            to: "/docs/redux",
+            label: "Redux",
+            position: "right",
+          },
+          {
+            to: "/docs/category/es6",
+            label: "Es6",
+            position: "right",
+          },
+          {
+            to: "/docs/css/introuction",
+            label: "CSS",
+            position: "right",
+          },
+          {
+            to: "/docs/category/glossaire",
+            label: "Glossaire",
+            position: "right",
+          },
           {
             href: "https://github.com/jolebowski/my-blog",
             label: "GitHub",
@@ -106,11 +105,11 @@ const config = {
           },
         ],
       },
-      // algolia: {
-      //   // apiKey: "e44c59d36394a26b1616e631a1c9d197",
-      //   // indexName: "edy",
-      //   // appId: "HXJSB0I3EO",
-      // },
+      algolia: {
+        apiKey: "20b7b501a2aabcb33a8cee8c0d8b8217",
+        indexName: "roadmapfrontend",
+        appId: "ITQW6ISERO",
+      },
       footer: {
         style: "dark",
         copyright: `Copyright © ${new Date().getFullYear()} jolebowski.`,
