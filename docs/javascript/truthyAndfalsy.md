@@ -21,6 +21,7 @@ Quelles valeurs sont fausses - ou évaluées false lorsqu'elles sont vérifiées
 - null qui représente quand il n'y a pas de valeur du tout
 - undefined qui représentent quand une variable déclarée n'a pas de valeur
 - NaN, ou pas un nombre
+- false
 
 ```js
 let numberOfApples = 0;
