@@ -161,3 +161,19 @@ Le dispatch envoie des actions au root reducer qui à son tour transmet l'action
 ### useSelector
 
 ## redux-persist
+
+## l'extension Redux DevTools
+
+L'extension est diponible sur le navigateur [chrome](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en).
+
+Pour pouvoir l'activé dans un projet :
+
+```js
+import { compose } from "redux";
+
+const composeEnhancer =
+  (process.env.NODE_ENV !== "production" &&
+    window &&
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
+  compose;
+```
