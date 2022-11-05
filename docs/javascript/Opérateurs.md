@@ -18,6 +18,8 @@ Type Coercion est le fait de convertir un type à un autre.
 
 ```js
 1 == "1"; // true
+true == 1; // true
+4.0 == 4; // true
 ```
 
 `L’opérateur d’égalité stricte` n’effectue pas de conversion de type
@@ -25,6 +27,9 @@ Type Coercion est le fait de convertir un type à un autre.
 ```js
 1 === 1; // true
 1 === "1"; // false
+4.0 === 4; // true
+true === 1; // false
+4.0 === 4.1; // false
 ```
 
 `L’opérateur d’inégalité` est l’opposé de l’opérateur d’égalité
