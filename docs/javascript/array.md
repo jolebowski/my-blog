@@ -114,6 +114,11 @@ Ce qu'il fait c'est qu'il va essentiellement filtrer tout ce qui n'est pas vrai.
 const arr2 = [0, "", null, NaN, undefined, 1, false];
 arr2.filter(Boolean);
 console.log(arr2); //[1]
+
+let test = 1 === 2 && { a: "jordan" };
+console.log(test); // false
+test = [1 === 2].filter(Boolean);
+console.log(test); // []
 ```
 
 ## .includes()
