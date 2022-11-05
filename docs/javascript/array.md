@@ -108,6 +108,14 @@ const newArr = arr.filter((_, index) => index < 4);
 console.log(newArr); // [0,1,2,3,4]
 ```
 
+Ce qu'il fait c'est qu'il va essentiellement filtrer tout ce qui n'est pas vrai.
+
+```js
+const arr2 = [0, "", null, NaN, undefined, 1, false];
+arr2.filter(Boolean);
+console.log(arr2); //[1]
+```
+
 ## .includes()
 
 La méthode [includes()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) est une méthode qui prend un seul argument.
