@@ -147,6 +147,8 @@ const App = () => {
 };
 ```
 
+### useDispatch
+
 Avec react-redux vous avez la posiblité d'utiliser de la même manière que les hooks dans react le `useDispatch` qui vous permet d'intérargir avec le store. Il fonctionne de la même manière qu'un [useContext](/docs/react/useContext).
 
 ```js
@@ -155,3 +157,7 @@ const dispatch = useDispatch(setCurrentUser(user));
 ```
 
 Le dispatch envoie des actions au root reducer qui à son tour transmet l'action à chaque fonction du reducer.
+
+### useSelector
+
+## redux-persist

@@ -105,7 +105,11 @@ const config = {
           },
         ],
       },
-      algolia: {},
+      algolia: {
+        apiKey: "20b7b501a2aabcb33a8cee8c0d8b8217",
+        indexName: "roadmapfrontend",
+        appId: "ITQW6ISERO",
+      },
       footer: {
         style: "dark",
         copyright: `Copyright © ${new Date().getFullYear()} jolebowski.`,

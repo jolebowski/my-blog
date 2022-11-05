@@ -1,4 +1,4 @@
-# Use Context
+# useContext
 
 Context c'est très similaire un composant qui entoure tous les autres composants qui ont besoin d'accéder au contexte.
 
