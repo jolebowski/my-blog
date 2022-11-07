@@ -28,7 +28,7 @@ const myAsyncFunction = async () => {
 ```
 
 Lorsque nous souhaitons gérer les erreurs
-Nous utilisons try et catch en effet le trye va excuté tous le code et lorsqu'une erreur est détécté il va s'arreter et exécuté ce qu'il y a entre le bloc catch.
+Nous utilisons try et catch en effet le try va excuté tous le code et lorsqu'une erreur est détécté il va s'arreter et exécuté ce qu'il y a entre le bloc catch.
 
 ```js
 try {
