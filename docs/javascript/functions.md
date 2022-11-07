@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# Functions
+# Fonctions
 
 En javascript on utilise notre code en partie réutilisable appelé fonction.
 
@@ -72,7 +72,7 @@ sum(1, 2);
 sum(1)(4);
 ```
 
-# setTimeout, setInterval, ClearInterval
+## setTimeout, setInterval, ClearInterval
 
 ```js
 let i = 1;
@@ -85,3 +85,50 @@ setTimeout(() => {
   clearInterval(interval);
 }, 6000);
 ```
+
+## Fonction génératrice
+
+Une fonction génératrice permet de définir un générateur(un générateur d'objet).
+
+Pour déclarer une une fonctione génératrice il faut ajouter une étoile :
+
+```js
+function* gen() {}
+```
+
+```js
+function* gen() {
+  console.log("a");
+}
+const g = gen();
+
+console.log(g.next()); // a {value: undefined, done: true}
+```
+
+La méthode next() renvoie un objet dont la propriété value contient la valeur générée et une propriété done qui indique si le générateur a produit sa dernière valeur ou non.
+
+```js
+function* gen(i) {
+  yield i;
+  yield i + 10;
+}
+const gObj = gen(5);
+
+console.log(gObj.next()); // {value: 5, done:false}
+```
+
+```js
+function* gene(i) {
+  yield i;
+  yield i * 2;
+  return 25;
+}
+const g = gene(5);
+g.next(); // {value:5, done:false}
+g.next(); // {value:10, done:false}
+g.next(); // {value:25, done:true}
+```
+
+Le mot-clé yield est utilisé pour suspendre et reprendre une fonction génératrice.
+
+Utilisé une fonction génératrice c'est lorsque vous voulez ranger plusieurs éxecutions, mais vous voulez contrôler quand vous voulez vous déplacez et continuez l'éxecution dans cette fonction.
