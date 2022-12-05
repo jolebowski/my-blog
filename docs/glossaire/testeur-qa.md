@@ -1,0 +1,3 @@
+# Testeur QA(Quality Assurance)
+
+Un testeur QA (Quality Assurance) est une personne qui s'assure que les produits logiciels ou les applications sont de haute qualité et fonctionnent correctement avant leur mise en production. Le testeur QA effectue des tests de bout en bout pour s'assurer que les fonctionnalités du logiciel ou de l'application fonctionnent correctement, qu'elles répondent aux exigences du client et qu'elles sont conformes aux normes de qualité. Le testeur QA peut également être responsable de la création de plans de test, de l'exécution des tests, de la collecte et de l'analyse des résultats, et de la communication des problèmes et des bugs à l'équipe de développement.
