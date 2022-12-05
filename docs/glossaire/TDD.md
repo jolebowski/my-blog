@@ -1,10 +1,5 @@
 # TDD(test driven developpement)
 
-Le TDD c’est une discipline
-
-est un guide qui permet de te guider vers quelque chose qui fonctionnera
-est une méthode de développement de logiciel qui consiste à concevoir un logiciel par petites étapes, de façon progressive, en écrivant avant chaque partie du code source propre au logiciel les tests correspondants et en remaniant le code continuellement.
-
-Avancer avec des feedbacks à l’instant t
+TDD (pour Test-Driven Development) est une méthode de développement logiciel dans laquelle les tests unitaires sont écrits avant même que le code source ne soit écrit. Cela permet aux développeurs de définir les fonctionnalités et les spécifications de leur code avant de l'écrire, ce qui garantit que le code respecte les exigences et fonctionne correctement. Le TDD implique également l'exécution répétée des tests unitaires pour s'assurer que le code ne casse pas en cas d'ajouts ou de modifications ultérieures. Cette approche permet d'éviter les erreurs de code et de faciliter l'intégration continue et la livraison continue dans les processus de développement logiciel.
 
 ![TDD](../../static/img/Cycle-global-tdd.png)

@@ -1,0 +1,3 @@
+# MVP (Minimum Viable Product)
+
+Un MVP (pour Minimum Viable Product) est une version minimale d'un produit ou d'un service qui contient les fonctionnalités de base nécessaires pour le rendre utilisable et tester son marché. Le but d'un MVP est de fournir une version initiale d'un produit ou d'un service pour obtenir des retours d'utilisateurs et d'identifier les améliorations nécessaires avant de le développer davantage. Les startups utilisent souvent le MVP pour tester rapidement leur idée de produit et obtenir des retours de leur cible de marché avant de dépenser trop de temps et d'argent dans son développement.

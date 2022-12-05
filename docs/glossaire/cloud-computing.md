@@ -1,0 +1,5 @@
+# Cloud computing
+
+Le cloud computing est une technologie qui permet d'accéder à des ressources informatiques, telles que des logiciels, des données, des infrastructures et des plateformes, via internet plutôt que sur des ordinateurs locaux ou des serveurs physiques. Le cloud computing permet aux entreprises et aux utilisateurs de bénéficier d'une flexibilité, d'une évolutivité et d'une disponibilité élevées pour leurs applications et leurs services, sans avoir à gérer les coûts et les complexités associés à l'infrastructure physique. Les services cloud sont généralement fournis par des fournisseurs de cloud, tels que Amazon Web Services, Google Cloud et Microsoft Azure.
+
+En outre, le cloud computing offre également des avantages tels que des coûts d'exploitation réduits, une scalabilité facile, une flexibilité pour les utilisateurs et une meilleure sécurité des données. De nombreuses entreprises utilisent aujourd'hui le cloud computing pour accélérer leur croissance et leur innovation en tirant parti des avantages de cette technologie.

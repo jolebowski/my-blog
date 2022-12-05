@@ -1,0 +1,3 @@
+# Design system
+
+Un design system est un ensemble de règles, de principes et de composants qui guident la conception d'une interface utilisateur pour une marque, un produit ou une organisation. Un design system peut inclure des éléments tels que des couleurs, des polices, des icônes, des boutons et des formulaires, ainsi que des règles d'utilisation et des exemples d'application. Le design system permet de maintenir une cohérence visuelle et fonctionnelle à travers les différentes interfaces utilisateur d'une entreprise, ce qui améliore l'expérience utilisateur et facilite le développement des produits. De nombreuses entreprises utilisent des design systems pour rationaliser et améliorer leurs processus de conception.
