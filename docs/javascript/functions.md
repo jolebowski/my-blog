@@ -84,6 +84,22 @@ const interval = setInterval(() => {
 setTimeout(() => {
   clearInterval(interval);
 }, 6000);
+
+// "here is message number 1"
+// "here is message number 2"
+// "here is message number 3"
+// "here is message number 4"
+
+console.log("a");
+console.log("b");
+setTimeout(() => {
+  console.log("c");
+}, 0);
+console.log("d");
+// "a"
+// "b"
+// "d"
+// "c"
 ```
 
 ## Fonction génératrice
