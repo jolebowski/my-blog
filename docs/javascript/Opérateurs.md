@@ -12,7 +12,7 @@ Il peut être utile de considérer les énoncés de comparaison comme des questi
 
 ## Opérateur d’égalité, d’égalité stricte, d’inégalité, d’inégalité stricte
 
-Type Coercion est le fait de convertir un type à un autre.
+**Type Coercion est le fait de convertir un type à un autre.**
 
 `L’opérateur d’égalité` compare deux valeurs et renvoie true si elle sont équivalentes ou false si elle ne le sont pas
 
@@ -96,7 +96,7 @@ function isTrue() {
     return true;
   }
 }
-console.log(isTrue); // true
+console.log(isTrue()); // true
 //10 <= 20 est évaluée en premier, ce qui renvoie true donc il passe à l’évaluation de l’expression à droite (20 >= 10). Cette expression est également évaluée a true */
 ```
 
@@ -141,6 +141,12 @@ Par exemple, si vous regardez `A && B`, si `A` est false , alors quelle que 
 
 Les expression de logiques sont évalués de gauche à droite. Semblables aux expressions mathématiques, les expressions logiques peuvent également utiliser des parenthèses pour indiquer les parties de l’expression qui doivent être évalués en premier.
 
+```js
+console.log(
+  (false && true) || (true && true && (true || false)) || (true && false)
+); // true
+```
+
 ## Opérateur ténaire
 
 ```js
@@ -159,7 +165,7 @@ Dans l'exemple ci-dessus :
 
 ## Nullish Coalescing Operator
 
-L'opérateur `??` renvoie le premier argument s'il est `nul` ou `undefined`. Sinon, il renvoie le second.
+L'opérateur `??` est un opérateur logique qui renvoie son opérande de droite lorsque son opérande de gauche vaut null ou undefined et qui renvoie son opérande de gauche sinon.
 
 ```js
 let name = null;
