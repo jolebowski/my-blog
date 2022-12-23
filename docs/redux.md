@@ -177,3 +177,16 @@ const composeEnhancer =
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
   compose;
 ```
+
+## redux-saga
+
+redux-saga est une bibliothèque qui vise à rendre les effets secondaires (side effects) des applications (c'est-à-dire les choses asynchrones comme la récupération de données) plus faciles à gérer, plus efficaces à exécuter, plus faciles à tester.
+redux-saga est un middleware redux. Il se déclénche après la mise à jour des reducers.
+
+Dans votre store vous devez l'importer comme cela :
+
+```js
+import { rootSaga } from "./root-saga";
+const sagaMiddleware = createSagaMiddleware();
+sagaMiddleware.run(rootSaga);
+```
