@@ -36,6 +36,14 @@ const updateMyVehicle = {
 };
 
 const myUpdatedVehicle = { ...myVehicle, ...updateMyVehicle };
+console.log(myUpdatedVehicle)
+// {
+//   brand: "Ford",
+//   color: "yellow",
+//   model: "Mustang",
+//   type: "car",
+//   year: 2021
+// }
 ```
 
 Ajout d'une valeur une valeur ou un ensemble de valeurs dans un objet :
